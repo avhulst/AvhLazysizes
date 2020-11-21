@@ -29,6 +29,7 @@ class AvhLazysizes extends Plugin
     {
         return [
             'Enlight_Controller_Action_PostDispatch_Frontend' => 'onPostDispatch',
+            'Enlight_Controller_Action_PostDispatch_Widgets' => 'onPostDispatch',
             'Theme_Compiler_Collect_Plugin_Javascript' => 'addJsFiles',
             'Theme_Compiler_Collect_Plugin_Less' => 'addLessFiles'
         ];
@@ -42,7 +43,8 @@ class AvhLazysizes extends Plugin
 
     public function addJsFiles(\Enlight_Event_EventArgs $args)
     {
-        $jsFiles = array(__DIR__ . '/Resources/views/frontend/_public/vendors/lazysizes/lazysizes.min.js',
+        $jsFiles = array(__DIR__ . '/Resources/views/frontend/_public/src/js/lazysizesConfig.js',
+            __DIR__ . '/Resources/views/frontend/_public/vendors/lazysizes/lazysizes.js',
             __DIR__ . '/Resources/views/frontend/_public/src/js/lazysizesbg.js');
         return new ArrayCollection($jsFiles);
     }
