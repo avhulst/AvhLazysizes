@@ -46,12 +46,13 @@
             <source sizes="{$itemSize}" srcset="{$srcSetRetina}" media="(min-resolution: 192dpi)"/>
             <source sizes="{$itemSize}" srcset="{$srcSet}"/>
 
-            <img src="{$sArticle.image.thumbnails[0].source}" alt="{$desc|strip_tags|truncate:160}" class="lazyload"/>
+            <img src="{$sArticle.image.thumbnails[0].source}" alt="{$desc|strip_tags|truncate:160}" class="lazyload"
+                 data-sizes="auto"/>
         </picture>
     {elseif $sArticle.image.source}
         <img src="{$sArticle.image.source}" alt="{$desc|strip_tags|truncate:160}" class="lazyload"/>
     {else}
         <img src="{link file='frontend/_public/src/img/no-picture.jpg'}" alt="{$desc|strip_tags|truncate:160}"
-             class="lazyload"/>
+             class="lazyload" data-sizes="auto"/>
     {/if}
 {/block}
