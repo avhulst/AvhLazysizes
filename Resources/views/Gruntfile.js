@@ -13,7 +13,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     src: [
-                        nodeDir + '/lazysizes/lazysizes.min.js'
+                        nodeDir + '/lazysizes/lazysizes.js'
                     ],
                     dest: vendorDir + '/lazysizes',
                     flatten: true
