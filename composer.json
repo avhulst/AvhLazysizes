@@ -10,6 +10,7 @@
   ],
   "description": "Shopware 5 lazyload with lazysizes",
   "license": "MIT",
+  "type": "shopware-plugin",
   "authors": [
     {
       "name": "Andreas van Hulst",
