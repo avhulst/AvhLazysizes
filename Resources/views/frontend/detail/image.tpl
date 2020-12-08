@@ -4,11 +4,12 @@
     <img srcset="{$sArticle.image.thumbnails[1].sourceSet}"
          src="{$sArticle.image.thumbnails[1].source}"
          alt="{$alt}"
-         itemprop="image" class="lazyload"/>
+         itemprop="image" class="lazyload" data-sizes="auto"/>
 {/block}
 {* add class lazyload *}
 {block name='frontend_detail_image_fallback'}
-    <img src="{link file='frontend/_public/src/img/no-picture.jpg'}" alt="{$alt}" itemprop="image" class="lazyload"/>
+    <img src="{link file='frontend/_public/src/img/no-picture.jpg'}" alt="{$alt}" itemprop="image" class="lazyload"
+         data-sizes="auto"/>
 {/block}
 {* add class lazyload *}
 {block name='frontend_detail_images_image_element'}

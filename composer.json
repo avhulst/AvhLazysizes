@@ -1,0 +1,21 @@
+{
+  "name": "avh/shopware5-lazysizes",
+  "keywords": [
+    "lazyload",
+    "lazysizes",
+    "pagespeed",
+    "lighthouse",
+    "shopware",
+    "shopware-plugin"
+  ],
+  "description": "Shopware 5 lazyload with lazysizes",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas van Hulst",
+      "email": "andreas@vanhulst.de"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}

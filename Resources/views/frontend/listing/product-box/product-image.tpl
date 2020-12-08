@@ -15,14 +15,13 @@
                 <img srcset="{$sArticle.image.thumbnails[0].sourceSet}"
                      alt="{$desc}"
                      data-extension="{$sArticle.image.extension}"
-                     title="{$desc|truncate:160}" class="lazyload"/>
+                     title="{$desc|truncate:160}" class="lazyload" data-sizes="auto"/>
             {/block}
-                    {else}
-
+        {else}
 
             <img src="{link file='frontend/_public/src/img/no-picture.jpg'}"
                  alt="{$desc}"
-                 title="{$desc|truncate:160}" class="lazyload"/>
+                 title="{$desc|truncate:160}" class="lazyload" data-sizes="auto"/>
         {/if}
     </span>
 {/block}
