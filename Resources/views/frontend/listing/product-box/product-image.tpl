@@ -17,8 +17,7 @@
                      data-extension="{$sArticle.image.extension}"
                      title="{$desc|truncate:160}" class="lazyload" data-sizes="auto"/>
             {/block}
-                    {else}
-
+        {else}
 
             <img src="{link file='frontend/_public/src/img/no-picture.jpg'}"
                  alt="{$desc}"
